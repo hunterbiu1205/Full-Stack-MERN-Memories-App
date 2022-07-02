@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c79af6b1c8d6ab66f5a71dc1f8b12f99",
+    "revision": "24dcd78c12be702c3d5e2a92b9f09580",
     "url": "/Full-Stack-MERN-Memories-App/index.html"
   },
   {
-    "revision": "ad0f371a1bd5519f56b2",
+    "revision": "dc995c6a23dec7cf6b9e",
     "url": "/Full-Stack-MERN-Memories-App/static/css/main.42acf6b3.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Full-Stack-MERN-Memories-App/static/js/2.40f35edf.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ad0f371a1bd5519f56b2",
-    "url": "/Full-Stack-MERN-Memories-App/static/js/main.619c9db4.chunk.js"
+    "revision": "dc995c6a23dec7cf6b9e",
+    "url": "/Full-Stack-MERN-Memories-App/static/js/main.8a90923c.chunk.js"
   },
   {
     "revision": "4e0e34f265fae8f33b01b27ae29d9d6f",
-    "url": "/Full-Stack-MERN-Memories-App/static/js/main.619c9db4.chunk.js.LICENSE.txt"
+    "url": "/Full-Stack-MERN-Memories-App/static/js/main.8a90923c.chunk.js.LICENSE.txt"
   },
   {
     "revision": "39c1d501520c7fc13223",
