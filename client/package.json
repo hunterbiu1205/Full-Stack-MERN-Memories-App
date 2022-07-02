@@ -24,11 +24,12 @@
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
   },
+  "homepage": "https://huataodong.github.io/Full-Stack-MERN-Memories-App/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
