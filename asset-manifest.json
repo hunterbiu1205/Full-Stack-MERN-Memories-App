@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Full-Stack-MERN-Memories-App/static/css/main.42acf6b3.chunk.css",
-    "main.js": "/Full-Stack-MERN-Memories-App/static/js/main.8a90923c.chunk.js",
-    "main.js.map": "/Full-Stack-MERN-Memories-App/static/js/main.8a90923c.chunk.js.map",
-    "runtime-main.js": "/Full-Stack-MERN-Memories-App/static/js/runtime-main.21d2c992.js",
-    "runtime-main.js.map": "/Full-Stack-MERN-Memories-App/static/js/runtime-main.21d2c992.js.map",
-    "static/js/2.40f35edf.chunk.js": "/Full-Stack-MERN-Memories-App/static/js/2.40f35edf.chunk.js",
-    "static/js/2.40f35edf.chunk.js.map": "/Full-Stack-MERN-Memories-App/static/js/2.40f35edf.chunk.js.map",
-    "index.html": "/Full-Stack-MERN-Memories-App/index.html",
-    "precache-manifest.dd1c3544fb9eaae3a14467df4d3d8c97.js": "/Full-Stack-MERN-Memories-App/precache-manifest.dd1c3544fb9eaae3a14467df4d3d8c97.js",
-    "service-worker.js": "/Full-Stack-MERN-Memories-App/service-worker.js",
-    "static/css/main.42acf6b3.chunk.css.map": "/Full-Stack-MERN-Memories-App/static/css/main.42acf6b3.chunk.css.map",
-    "static/js/2.40f35edf.chunk.js.LICENSE.txt": "/Full-Stack-MERN-Memories-App/static/js/2.40f35edf.chunk.js.LICENSE.txt",
-    "static/js/main.8a90923c.chunk.js.LICENSE.txt": "/Full-Stack-MERN-Memories-App/static/js/main.8a90923c.chunk.js.LICENSE.txt",
-    "static/media/memories.png": "/Full-Stack-MERN-Memories-App/static/media/memories.5c0c63fb.png"
+    "main.css": "/static/css/main.42acf6b3.chunk.css",
+    "main.js": "/static/js/main.5b2a2fa3.chunk.js",
+    "main.js.map": "/static/js/main.5b2a2fa3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.20628b47.js",
+    "runtime-main.js.map": "/static/js/runtime-main.20628b47.js.map",
+    "static/js/2.b46dcd98.chunk.js": "/static/js/2.b46dcd98.chunk.js",
+    "static/js/2.b46dcd98.chunk.js.map": "/static/js/2.b46dcd98.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.aa1eccd33587ce4da6c59cfbeab622ef.js": "/precache-manifest.aa1eccd33587ce4da6c59cfbeab622ef.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.42acf6b3.chunk.css.map": "/static/css/main.42acf6b3.chunk.css.map",
+    "static/js/2.b46dcd98.chunk.js.LICENSE.txt": "/static/js/2.b46dcd98.chunk.js.LICENSE.txt",
+    "static/js/main.5b2a2fa3.chunk.js.LICENSE.txt": "/static/js/main.5b2a2fa3.chunk.js.LICENSE.txt",
+    "static/media/memories.png": "/static/media/memories.5c0c63fb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.21d2c992.js",
-    "static/js/2.40f35edf.chunk.js",
+    "static/js/runtime-main.20628b47.js",
+    "static/js/2.b46dcd98.chunk.js",
     "static/css/main.42acf6b3.chunk.css",
-    "static/js/main.8a90923c.chunk.js"
+    "static/js/main.5b2a2fa3.chunk.js"
   ]
 }
