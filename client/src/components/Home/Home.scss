@@ -1,0 +1,23 @@
+
+
+// .app__body {
+//     padding-top: 150px;
+//     background-color: aqua;
+
+// }
+
+.app__content {
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 150px;
+
+ background-color:#EDE5DC;
+    padding: 10rem 5rem 0rem 5rem;
+
+        .form {
+            @media screen and (max-width:650px){
+                display: none;
+        }
+    }
+   
+}

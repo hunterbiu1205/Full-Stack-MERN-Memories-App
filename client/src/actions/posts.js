@@ -1,54 +1,56 @@
 import { FETCH_ALL, CREATE, UPDATE, DELETE, LIKE } from '../constants/actionTypes';
+
 import * as api from '../api/index.js';
 
 export const getPosts = () => async (dispatch) => {
-  try {
-    const { data } = await api.fetchPosts();
+    try {
 
-    dispatch({ type: FETCH_ALL, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
+        const { data } = await api.fetchPosts();
+        dispatch({ type: FETCH_ALL, payload: data });
+
+    } catch (error) {
+        console.log(error.message);
+    }
 };
 
 export const createPost = (post) => async (dispatch) => {
-  try {
-    const { data } = await api.createPost(post);
+    try {
+        const { data } = await api.createPost(post);
+        // console.log('createPost:', post)
+        // console.log('{data}', { data })
+        dispatch({ type: CREATE, payload: data });
 
-    dispatch({ type: CREATE, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
+    } catch (error) {
+        console.log(error.message);
+    }
 };
 
 export const updatePost = (id, post) => async (dispatch) => {
-  try {
-    const { data } = await api.updatePost(id, post);
+    try {
+        const { data } = await api.updatePost(id, post);
 
-    dispatch({ type: UPDATE, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
+        dispatch({ type: UPDATE, payload: data });
+    } catch (error) {
+        console.log(error.message);
+    }
 };
 
 export const likePost = (id) => async (dispatch) => {
-  const user = JSON.parse(localStorage.getItem('profile'));
+    try {
+        const { data } = await api.likePost(id);
 
-  try {
-    const { data } = await api.likePost(id, user?.token);
-
-    dispatch({ type: LIKE, payload: data });
-  } catch (error) {
-    console.log(error);
-  }
+        dispatch({ type: LIKE, payload: data });
+    } catch (error) {
+        console.log(error.message);
+    }
 };
 
 export const deletePost = (id) => async (dispatch) => {
-  try {
-    await await api.deletePost(id);
+    try {
+        await api.deletePost(id);
 
-    dispatch({ type: DELETE, payload: id });
-  } catch (error) {
-    console.log(error);
-  }
+        dispatch({ type: DELETE, payload: id });
+    } catch (error) {
+        console.log(error.message);
+    }
 };
