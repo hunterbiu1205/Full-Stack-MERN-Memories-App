@@ -8,7 +8,7 @@ const Posts = ({ setCurrentId }) => {
 
     //fetching the post
     const posts = useSelector((state) => state.posts);  //post from global store
-    // console.log('posts:', posts);
+    console.log('posts:', posts);
     const classes = useStyles();
 
     return (

@@ -8,7 +8,9 @@ import axios from 'axios';
 // export const updatePost = (id, updatedPost) => axios.patch(`${url}/${id}`, updatedPost);
 // export const deletePost = (id) => axios.delete(`${url}/${id}`);
 
-const API = axios.create({ baseURL: 'https://memories-app-354615.ts.r.appspot.com' });
+// const API = axios.create({ baseURL: 'https://memories-app-354615.ts.r.appspot.com' });
+
+const API = axios.create({ baseURL: 'http://localhost:5000' });
 
 // const API = axios.create({ baseURL: 'http://localhost:5000' });
 
