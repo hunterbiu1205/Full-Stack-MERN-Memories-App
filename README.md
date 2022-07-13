@@ -37,7 +37,7 @@ MongoDB Atlas: https://www.mongodb.com/cloud/atlas
 <img width="598" alt="image" src="https://user-images.githubusercontent.com/75303443/178651908-f5de4280-13ad-4c86-a3d4-330cc7cb5656.png">
 
 
-—————————————————————————————————————————————————————————————————————————————————————
+——————————————————————————————————————————————————————————————————————
 Redux set up
 
 Redux 是一个使用叫做“action”的事件来管理和更新应用状态的模式和工具库 它以集中式Store（centralized store）的方式对整个应用中使用的状态进行集中管理，其规则确保状态只能以可预测的方式更新。
