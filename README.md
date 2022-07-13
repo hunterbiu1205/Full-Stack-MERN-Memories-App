@@ -1,7 +1,7 @@
 # Full-Stack-MERN-Memories-App
 
 display:www.hunter-memories.com
-———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————————————————
 Backend set up
 
 npm is the world's largest Software Registry. The registry contains over 800,000 code packages.
@@ -33,11 +33,11 @@ bodyParser.urlencoded({ extended: true }) - middleware for parsing bodies from 
 
 MongoDB Atlas: https://www.mongodb.com/cloud/atlas
 
-Route methods
-![image](https://user-images.githubusercontent.com/75303443/178651593-24e16e6e-3686-476f-8f7a-a5fcb68738ad.png)
+
+<img width="598" alt="image" src="https://user-images.githubusercontent.com/75303443/178651908-f5de4280-13ad-4c86-a3d4-330cc7cb5656.png">
 
 
-———————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+—————————————————————————————————————————————————————————————————————————————————————
 Redux set up
 
 Redux 是一个使用叫做“action”的事件来管理和更新应用状态的模式和工具库 它以集中式Store（centralized store）的方式对整个应用中使用的状态进行集中管理，其规则确保状态只能以可预测的方式更新。
@@ -53,11 +53,68 @@ Set up for redux
 4. compose: This is a functional programming utility, and is included in Redux as a convenience.
 5. thunk is a programming term that means "a piece of code that does some delayed work”.
 
-
 <img width="659" alt="image" src="https://user-images.githubusercontent.com/75303443/178651738-e0a95890-b65a-49de-892e-069a59ea6f1b.png">
-
 <img width="612" alt="image" src="https://user-images.githubusercontent.com/75303443/178651784-4ffa472a-2338-4106-a538-692428d6bddf.png">
 <img width="533" alt="image" src="https://user-images.githubusercontent.com/75303443/178651819-612ed48b-190e-4b52-9606-e4c0a2837131.png">
-
-
 <img width="659" alt="image" src="https://user-images.githubusercontent.com/75303443/178651738-e0a95890-b65a-49de-892e-069a59ea6f1b.png">
+
+
+—————————————————————————————————————————————————————————————————————
+Form.js
+
+onChange={(e) => setPostData({ ...postData, creator:e.target.value })}
+
+This means in every textfield if we do the same thing but only change the last property that means all the data is going to persist while changing only the specific property of that specific text field
+
+<FileBase type="file" multiple={false} onDone={({ base64 }) => setPostData({ ...postData, selectedFile: base64 })} />
+
+
+  e.preventDefault(); // not too get the refresh of the browser
+
+
+Form.js -> hundleSubmit() -> dispatch (createPost(newPost))
+
+Action -> createPosts(newPost) 
+		
+	-> { data } = await api.createPost(newPost);   sending the post to API
+	->dispatch (type:CREATE, payload:data)
+
+Reducer -> case CREATE: -> return [...posts, action.payload];
+
+Index.js -> store=createStore(reducers) ->  <Provider store={store}> -> APP
+
+SERVER -> Routes -> Controller => createPosts (req,res) -> newPost = new schema(postBody) -> newPost.save( )
+
+
+——————————————————————————————————————————————————————————————————
+ 
+Posts.js
+
+userSelector( ) When an action is dispatched, useSelector() will do a reference comparison of the previous selector result value and the current result value.
+
+userSelector( ) from Posts.js is used to fetch the data from Redux global store
+ const posts = useSelector((state) => state.posts);
+
+If there is no post 
+!posts.length ? <CircularProgress /> :()
+ 
+ —————————————————————————————————————————————————————————————————
+ 
+ updatePost
+
+currentId, setCurrentId to Post and From
+Accept these as props From
+const Form = ({ currentId, setCurrentId }) => 
+
+Accept these as props Post
+<Posts setCurrentId={setCurrentId} />
+
+const Posts = ({ setCurrentId }) => {
+
+Pass it to its child post
+const Post = ({ post, setCurrentId }) => {
+
+Button style={{ color: 'white' }} size="small" onClick={() => setCurrentId(post._id)}><MoreHorizIcon fontSize="medium" /></Button>
+<img width="625" alt="image" src="https://user-images.githubusercontent.com/75303443/178652090-74891b2a-6c2d-494e-8c61-17486b59147d.png">
+
+
